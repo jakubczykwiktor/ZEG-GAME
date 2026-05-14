@@ -93,7 +93,7 @@ window.addEventListener("load", () => {
    
 // Pobranie elementów sterujących instrukcją
     const instructionBtn = document.getElementById("instructionBtn");
-    const instructionPopup = document.getElementById("instructionPopup");
+    const instructionPopup = document.getElementById("instructionPopUP");
     const closeInstruction = document.getElementById("closeInstruction");
 
 
@@ -106,8 +106,11 @@ window.addEventListener("load", () => {
     closeInstruction.addEventListener("click", () => {
       instructionPopup.style.display = "none";
     });
+// URUCHOMIENIE SILNIKA GRY:
+    loadLevel();     // Wczytuje dane aktualnego poziomu
+    resizeCanvas();  // Dopasowuje rozmiar pola gry
+    loop();  
 
-    
 }); 
 });
 

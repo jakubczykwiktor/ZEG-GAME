@@ -7,9 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="game">
-        
-    </canvas>
+
+    <div class="containter">
+    <div id="instructionPopUP">
+        <div class="instruction-box">
+            <h1>Instrukcja </h1>
+
+            <p>Witaj w grze "Labirynt węży"! Twoim celem jest przejście przez labiryntu unikajac wrogow.</p>
+            <p>Sterowanie:</p>
+            <ul>
+                <li>Strzałka w górę - poruszanie się w górę</li>
+                <li>Strzałka w dół - poruszanie się w dół</li>
+                <li>Strzałka w lewo - poruszanie się w lewo</li>
+                <li>Strzałka w prawo - poruszanie się w prawo</li>
+            </ul>
+            <p>zbierz klucz, rozwiaz zagadke i przejdz level wchodzac do drzwi. </p> 
+            <p>Uważaj na węża - tracisz serca(masz3)</p>
+            <p>Autorzy: <b>Mateusz Kwapik 2P2</b> <b>Wiktor Jakubczyk 2P2</b></p>
+            <p>Powodzenia!</p>
+            <button id="closeInstruction">ZAMKNIJ</button>
+        </div>
+    </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+
+    <div class="canvas-box">
+      <canvas id="game"></canvas>
+    </div>
 
    <script src="map.js"></script>
     <script src="player.js"></script> 

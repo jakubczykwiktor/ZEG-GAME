@@ -133,3 +133,19 @@ canvas{
 .instruction-box h1{
   font-size:48px;
 }
+
+.instruction-box p{
+  font-size:28px;
+  margin:25px 0;
+}
+
+.instruction-box button{
+  width:220px;
+  height:70px;
+  font-size:28px;
+  background:#224f8d;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}

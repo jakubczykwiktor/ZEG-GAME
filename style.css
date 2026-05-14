@@ -119,3 +119,17 @@ canvas{
   justify-content:center;
   align-items:center;
 }
+
+.instruction-box{
+  width:600px;
+  background:#031733;
+  border:5px solid #2f5180;
+  border-radius:12px;
+  padding:40px;
+  color:white;
+  text-align:center;
+}
+
+.instruction-box h1{
+  font-size:48px;
+}

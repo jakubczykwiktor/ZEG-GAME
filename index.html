@@ -82,9 +82,20 @@
 window.addEventListener("load", () => {
     const startBtn = document.getElementById("startBtn");
     const canvas = document.getElementById("game");
+
+
+// Ukrywamy płótno gry na samym początku (widoczne tylko menu)
+  canvas.style.display = "none";
+
+  // Reakcja na kliknięcie przycisku "GRAJ"
+  startBtn.addEventListener("click", () => {
+    canvas.style.display = "block"; // Pokaż grę
+   
+
+
+
+}); 
 });
-
-
 
     </script>
 </body>

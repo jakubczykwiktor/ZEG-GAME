@@ -1,0 +1,15 @@
+body{
+  margin:0;
+  background:#02122b;
+  font-family:monospace;
+  color:white;
+}
+
+.container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+}

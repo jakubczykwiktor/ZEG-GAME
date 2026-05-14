@@ -30,3 +30,18 @@ body{
   flex-direction:column;
   justify-content:space-between;
 }
+
+.game-panel{
+  width:700px;
+  height:700px;
+}
+
+.menu-panel h1,
+.game-panel h1{
+  text-align:center;
+  font-size:42px;
+}
+
+.logo{
+  text-align:center;
+}

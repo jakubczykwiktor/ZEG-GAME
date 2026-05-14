@@ -13,3 +13,20 @@ body{
   align-items:center;
   gap:40px;
 }
+
+.menu-panel,
+.game-panel{
+  background:#031733;
+  border:5px solid #2f5180;
+  border-radius:12px;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.menu-panel{
+  width:350px;
+  height:700px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}

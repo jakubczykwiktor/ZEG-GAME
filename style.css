@@ -45,3 +45,19 @@ body{
 .logo{
   text-align:center;
 }
+
+.logo h2{
+  color:#4f93ff;
+  font-size:55px;
+}
+
+.snake{
+  font-size:120px;
+}
+
+.buttons{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  align-items:center;
+}

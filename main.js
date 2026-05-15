@@ -43,3 +43,10 @@ function loop(){
 
   requestAnimationFrame(loop);
 }
+
+
+loadLevel();
+
+resizeCanvas();
+
+loop();

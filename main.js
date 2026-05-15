@@ -25,7 +25,11 @@ function drawMap(){
     else
         ctx.fillStyle="black";
 
-    
-    }
+    ctx.fillRect(
+        x*TILE,
+        y*TILE,
+        TILE,
+        TILE
+        );}
     }
 }

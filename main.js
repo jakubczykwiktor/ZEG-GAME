@@ -34,4 +34,12 @@ function drawMap(){
     }
 }
 
+function loop(){
 
+
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  drawMap();
+
+  requestAnimationFrame(loop);
+}

@@ -33,5 +33,9 @@ function updateSize() {
   ROWS = currentMap.length;          
   COLS = currentMap[0].length;       
 }
-
+function loadLevel() {
+  
+  currentMap = maps[level - 1];
+  updateSize();
+}
 

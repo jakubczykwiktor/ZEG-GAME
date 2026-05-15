@@ -17,6 +17,15 @@ function drawMap(){
 
   
     for(let x=0;x<COLS;x++){
-        }
+       
+    
+    if(currentMap[y][x]===1)
+        ctx.fillStyle="gray";
+
+    else
+        ctx.fillStyle="black";
+
+    
+    }
     }
 }

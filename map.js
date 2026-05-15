@@ -25,3 +25,13 @@ const maps = [
 
 
 ];
+
+let currentMap = maps[0];
+
+
+function updateSize() {
+  ROWS = currentMap.length;          
+  COLS = currentMap[0].length;       
+}
+
+

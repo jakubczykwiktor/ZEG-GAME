@@ -3,3 +3,6 @@ keyImg.src = "klucz.png";
   
 const doorImg = new Image();
 doorImg.src = "drzwi.png";
+
+const puzzleImg = new Image();
+puzzleImg.src = "grafikapienadza.png";

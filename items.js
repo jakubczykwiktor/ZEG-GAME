@@ -20,3 +20,31 @@ function drawItems(ctx){
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+function canOpenDoor(x,y){
+  if(currentMap[y][x]===4){
+    if(!hasKey){
+      alert("Najpierw klucz!");
+      return false; // Blokuje ruch, jeśli nie masz klucza
+    }
+
+    if(!puzzleSolved){
+      startPuzzle(); // Aktywuje minigrę/zagadkę
+      return false; // Blokuje ruch do czasu rozwiązania
+    }
+
+    currentMap[y][x]=0; // Usuwa przeszkodę po rozwiązaniu
+  }
+  return true; // Pozwala na ruch
+}

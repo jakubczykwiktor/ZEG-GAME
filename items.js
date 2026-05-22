@@ -21,14 +21,19 @@ function drawItems(ctx){
   }
 }
 
+function checkItems(){
+  if(currentMap[player.y][player.x]===3){
+    hasKey=true;
+    coins++;
 
+    // Aktualizacja licznika w interfejsie HTML
+    document.getElementById("coinsText").innerText = "klucze: " + coins;
+    document.getElementById("topCoinsText").innerText = "klucze: " + coins;
 
-
-
-
-
-
-
+    currentMap[player.y][player.x]=0; // Usuwa klucz z mapy (zmienia na podłogę)
+    alert("Masz klucz!");
+  }
+}
 
 
 

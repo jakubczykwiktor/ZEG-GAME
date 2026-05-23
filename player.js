@@ -11,3 +11,12 @@ let player = {
   y: 1,  
   hp: 3  
 };
+
+function drawPlayer(ctx){
+  
+  if (playerImg.complete) {
+   
+  
+    ctx.drawImage(playerImg, player.x * TILE, player.y * TILE, TILE, TILE);
+  }
+}

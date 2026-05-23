@@ -40,7 +40,7 @@ function loop(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
 
   drawMap();
-
+drawPlayer(ctx);
   requestAnimationFrame(loop);
 }
 

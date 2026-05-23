@@ -67,7 +67,7 @@ function checkWin(){
 
     
     level++;
-    
+
     if(level>maps.length){
 
       alert("KONIEC GRY!");
@@ -77,6 +77,24 @@ function checkWin(){
 
       return;
     }
+    loadLevel();
+
+    
+    resizeCanvas();
+
+    
+    resetState();
+
+    
+    alert("Poziom "+level);
+
+    
+    document.getElementById("levelText").innerText =
+      "POZIOM: " + level;
+
+    
+    document.getElementById("bottomLevelText").innerText =
+      "POZIOM: " + level;
 }
 }
 

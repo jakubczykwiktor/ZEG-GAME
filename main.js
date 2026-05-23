@@ -63,6 +63,8 @@ function loop(){
 
   drawMap();
 drawPlayer(ctx);
+drawEnemy(ctx);
+drawItems(ctx);
   requestAnimationFrame(loop);
 }
 

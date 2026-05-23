@@ -36,15 +36,29 @@ function drawMap(){
 
 function resetState(){
 
-  // reset pozycji gracza
+  
   player.x=1;
   player.y=1;
 
-  // reset klucza
+  
   hasKey=false;
 
-  // reset zagadki
+  
   puzzleSolved=false;
+}
+
+function checkWin(){
+
+  
+  if(currentMap[player.y][player.x]===2){
+
+    
+    if(!hasKey){
+
+      alert("Weź klucz!");
+      return;
+    }
+}
 }
 
 

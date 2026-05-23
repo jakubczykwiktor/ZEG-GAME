@@ -34,6 +34,28 @@ function drawMap(){
     }
 }
 
+document.addEventListener("keydown",(e)=>{
+
+  // ruch góra
+  if(e.key==="ArrowUp")
+    movePlayer(0,-1);
+
+  // ruch dół
+  if(e.key==="ArrowDown")
+    movePlayer(0,1);
+
+  // ruch lewo
+  if(e.key==="ArrowLeft")
+    movePlayer(-1,0);
+
+  //ruch prawo
+  if(e.key==="ArrowRight")
+    movePlayer(1,0);
+
+  
+  checkWin();
+});
+
 function loop(){
 
 

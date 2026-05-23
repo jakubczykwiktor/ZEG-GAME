@@ -13,8 +13,14 @@ function drawEnemy(ctx) {
 }
 
 function moveEnemy() {
-  // Definicja możliwych kierunków: góra, dół, lewo, prawo
+  
   const dirs = [
     {x:0, y:-1}, {x:0, y:1}, {x:-1, y:0}, {x:1, y:0}
   ];
-}
+
+  
+  const r = dirs[Math.floor(Math.random() * dirs.length)];
+
+  const nx = enemy.x + r.x; 
+  const ny = enemy.y + r.y;
+} 

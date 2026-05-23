@@ -1,6 +1,6 @@
 
 const enemyImg = new Image();
-enemyImg.src = "wąz1.png";
+enemyImg.src = "grafika/wąz1.png";
 
 let enemy = {
   x: 8,

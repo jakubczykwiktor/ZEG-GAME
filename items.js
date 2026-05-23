@@ -1,11 +1,11 @@
 const keyImg = new Image();
-keyImg.src = "klucz.png";
+keyImg.src = "grafika/klucz.png";
   
 const doorImg = new Image();
-doorImg.src = "drzwi.png";
+doorImg.src = "grafika/drzwi.png";
 
 const puzzleImg = new Image();
-puzzleImg.src = "grafikapienadza.png";
+puzzleImg.src = "grafika/grafikapienadza.png";
 
 let hasKey = false;
 let puzzleSolved = false;

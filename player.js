@@ -20,3 +20,9 @@ function drawPlayer(ctx){
     ctx.drawImage(playerImg, player.x * TILE, player.y * TILE, TILE, TILE);
   }
 }
+
+function movePlayer(dx, dy){
+  let nx = player.x + dx; // Potencjalna nowa pozycja X
+  let ny = player.y + dy;
+
+}

@@ -67,6 +67,16 @@ function checkWin(){
 
     
     level++;
+    
+    if(level>maps.length){
+
+      alert("KONIEC GRY!");
+
+      // restart gry
+      location.reload();
+
+      return;
+    }
 }
 }
 

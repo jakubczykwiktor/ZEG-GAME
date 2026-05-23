@@ -22,7 +22,16 @@ function drawPlayer(ctx){
 }
 
 function movePlayer(dx, dy){
-  let nx = player.x + dx; // Potencjalna nowa pozycja X
+  let nx = player.x + dx; 
   let ny = player.y + dy;
+
+
+  if(nx >= 0 && ny >= 0 && nx < COLS && ny < ROWS &&
+     currentMap[ny][nx] !== 1 && canOpenDoor(nx, ny)){
+    
+    
+    player.x = nx;
+    player.y = ny;
+  }
 
 }

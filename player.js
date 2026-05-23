@@ -33,5 +33,5 @@ function movePlayer(dx, dy){
     player.x = nx;
     player.y = ny;
   }
-
+checkItems();
 }

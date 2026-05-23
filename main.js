@@ -100,11 +100,11 @@ function checkWin(){
 
 function updateHeartsUI(){
 
-  // dolny HUD
+  
   document.getElementById("heartsText").innerText =
     "serca: " + player.hp;
 
-  // górny HUD
+  
   document.getElementById("topHeartsText").innerText =
     "serca: " + player.hp;
 }
@@ -132,6 +132,8 @@ document.addEventListener("keydown",(e)=>{
   checkWin();
 });
 
+
+setInterval(moveEnemy,500);
 function loop(){
 
 

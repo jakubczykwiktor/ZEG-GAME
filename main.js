@@ -58,6 +58,15 @@ function checkWin(){
       alert("Weź klucz!");
       return;
     }
+    
+    if(!puzzleSolved){
+
+      alert("Rozwiąż zagadkę!");
+      return;
+    }
+
+    
+    level++;
 }
 }
 

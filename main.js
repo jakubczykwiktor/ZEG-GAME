@@ -34,6 +34,20 @@ function drawMap(){
     }
 }
 
+function resetState(){
+
+  // reset pozycji gracza
+  player.x=1;
+  player.y=1;
+
+  // reset klucza
+  hasKey=false;
+
+  // reset zagadki
+  puzzleSolved=false;
+}
+
+
 document.addEventListener("keydown",(e)=>{
 
   // ruch góra
@@ -65,6 +79,7 @@ function loop(){
 drawPlayer(ctx);
 drawEnemy(ctx);
 drawItems(ctx);
+
   requestAnimationFrame(loop);
 }
 

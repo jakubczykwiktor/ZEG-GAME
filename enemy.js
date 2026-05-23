@@ -23,4 +23,10 @@ function moveEnemy() {
 
   const nx = enemy.x + r.x; 
   const ny = enemy.y + r.y;
+
+
+  if (currentMap[ny][nx] !== 1) {
+    enemy.x = nx;
+    enemy.y = ny;
+  }
 } 

@@ -186,7 +186,11 @@ function resetGame(){
 
   alert("Gra została zresetowana.");
 }
+const resetBtn = document.getElementById("resetBtn");
 
+if(resetBtn){
+  resetBtn.addEventListener("click", resetGame);
+}
 
 loadLevel();
 

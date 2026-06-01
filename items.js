@@ -9,7 +9,7 @@ puzzleImg.src = "grafika/grafikapienadza.png";
 
 let hasKey = false;
 let puzzleSolved = false;
-let coins = 0;
+ coins = 0;
 
 function drawItems(ctx){
   for(let y=0;y<ROWS;y++){

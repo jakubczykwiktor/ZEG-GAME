@@ -3,8 +3,8 @@ const enemyImg = new Image();
 enemyImg.src = "grafika/wąz1.png";
 
 let enemy = {
-  x: 8,
-  y: 8
+  x: 5,
+  y: 5
 };
 
 

@@ -101,8 +101,11 @@ function updateSize() {
   COLS = currentMap[0].length;       
 }
 function loadLevel() {
-  
-  currentMap = maps[level - 1];
+
+  currentMap = JSON.parse(
+    JSON.stringify(maps[level - 1])
+  );
+
   updateSize();
 }
 

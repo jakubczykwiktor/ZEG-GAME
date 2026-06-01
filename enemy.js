@@ -30,3 +30,10 @@ function moveEnemy() {
     enemy.y = ny;
   }
 } 
+//diodanie funkcji resetującej pozycję wroga w prawym dolnym rogu mapy po przegranej lub wygranej
+function resetEnemy(){
+
+  enemy.x = COLS - 2;
+  enemy.y = ROWS - 2;
+
+}

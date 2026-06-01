@@ -85,6 +85,7 @@ function checkWin(){
     
     resetState();
 
+     
     
     alert("Poziom "+level);
 
@@ -158,6 +159,9 @@ function resetGame(){
   player.y = 1;
   player.hp = 3;
 
+  enemy.x = COLS - 2;
+  enemy.y = ROWS - 2;
+
   
   hasKey = false;
   puzzleSolved = false;
@@ -195,5 +199,5 @@ if(resetBtn){
 loadLevel();
 
 resizeCanvas();
-
+resetEnemy();
 loop();

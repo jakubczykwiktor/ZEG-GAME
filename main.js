@@ -146,6 +146,46 @@ drawItems(ctx);
 
   requestAnimationFrame(loop);
 }
+function resetGame(){
+
+  level = 1;
+
+  
+  loadLevel();
+
+  
+  player.x = 1;
+  player.y = 1;
+  player.hp = 3;
+
+  
+  hasKey = false;
+  puzzleSolved = false;
+
+  
+  resizeCanvas();
+
+  
+  document.getElementById("levelText").innerText =
+    "POZIOM: 1";
+
+  document.getElementById("bottomLevelText").innerText =
+    "POZIOM: 1";
+
+  document.getElementById("heartsText").innerText =
+    "serca: 3";
+
+  document.getElementById("topHeartsText").innerText =
+    "serca: 3";
+
+  document.getElementById("coinsText").innerText =
+    "klucze: 0";
+
+  document.getElementById("topCoinsText").innerText =
+    "klucze: 0";
+
+  alert("Gra została zresetowana.");
+}
 
 
 loadLevel();

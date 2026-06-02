@@ -15,6 +15,7 @@ let ans = prompt(p.q);
 
 if (ans === p.a) {
     alert("Dobrze!");
+    puzzleSolved = true; 
   } else {
     alert("Źle!");
 

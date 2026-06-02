@@ -109,10 +109,11 @@ updateHeartsUI();
 player.x=1;
 player.y=1;
 
-}
-  
+if(player.hp<=0){
 
 
+    }
+  }
 }
 
 function updateHeartsUI(){

@@ -4,14 +4,19 @@ let level =1;
 let ROWS;
 let COLS;
 
-// 0- podloga, 1-sciana, 2- wyjscie, 3-klucz, 4- zagadka
+// 0- podloga, 
+// 1-sciana, 
+// 2- wyjscie,
+//  3-klucz, 
+// 4- zagadka
+// 5- apteczka
 //mapa 9x9
 const maps = [
 [
     [1,1,1,1,1,1,1,1,1],
     [1,0,0,0,0,0,0,2,1],
     [1,0,1,1,1,1,0,1,1],
-    [1,0,0,0,0,1,0,0,1],
+    [1,0,0,0,5,1,0,0,1],
     [1,1,1,3,0,1,1,0,1],
     [1,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,0,1],

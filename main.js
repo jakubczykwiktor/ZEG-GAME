@@ -85,6 +85,7 @@ function checkWin(){
     
     resetState();
 
+    resetEnemy(); 
      
     
     alert("Poziom "+level);

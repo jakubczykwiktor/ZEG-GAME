@@ -11,4 +11,12 @@ function startPuzzle() {
   
 const p = puzzles[level];
 
+let ans = prompt(p.q);
+
+if (ans === p.a) {
+    alert("Dobrze!");
+  } else {
+    alert("Źle!");
+
+  }
 }

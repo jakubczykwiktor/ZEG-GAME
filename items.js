@@ -21,18 +21,9 @@ function drawItems(ctx){
       if(currentMap[y][x]===4) ctx.drawImage(puzzleImg,x*TILE,y*TILE,TILE,TILE); // 4 = Zagadka/Moneta
       if(currentMap[y][x]===2) ctx.drawImage(doorImg,x*TILE,y*TILE,TILE,TILE);   // 2 = Wyjście
       
-      if(currentMap[player.y][player.x] === 5){
-
-  player.hp++;
-
-  updateHeartsUI();
-
-  currentMap[player.y][player.x] = 0;
-
-  alert("Znaleziono apteczkę! +1 HP"); //5 apteczka
-}
-    }
+      if(currentMap[y][x]===5) ctx.drawImage(medkitImg,x*TILE,y*TILE,TILE,TILE); // 5 = Apteczka
   }
+}
 }
 
 function checkItems(){
@@ -47,6 +38,17 @@ function checkItems(){
     currentMap[player.y][player.x]=0; // Usuwa klucz z mapy (zmienia na podłogę)
     alert("Masz klucz!");
   }
+
+  if(currentMap[player.y][player.x] === 5){
+
+  player.hp++;
+
+  updateHeartsUI();
+
+  currentMap[player.y][player.x] = 0;
+
+  alert("Znaleziono apteczkę! +1 HP");
+}
 }
 
 

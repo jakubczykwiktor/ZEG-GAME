@@ -6,3 +6,8 @@ const puzzles = {
   4: { q: "12/3+5=?", a: "9" },    // Poziom 4
   5: { q: "15*2-10=?", a: "20" }   // Poziom 5
 };
+
+function startPuzzle() {
+  
+
+}

@@ -10,6 +10,9 @@ puzzleImg.src = "grafika/grafikapienadza.png";
 const medkitImg = new Image();
 medkitImg.src = "grafika/apteczka.png";
 
+const trapImg = new Image();
+trapImg.src = "grafika/pulapka.png";
+
 let hasKey = false;
 let puzzleSolved = false;
  coins = 0;
@@ -22,6 +25,7 @@ function drawItems(ctx){
       if(currentMap[y][x]===2) ctx.drawImage(doorImg,x*TILE,y*TILE,TILE,TILE);   // 2 = Wyjście
       
       if(currentMap[y][x]===5) ctx.drawImage(medkitImg,x*TILE,y*TILE,TILE,TILE); // 5 = Apteczka
+      if(currentMap[y][x]===6) ctx.drawImage(trapImg,x*TILE,y*TILE,TILE,TILE); // 6 = Pułapka
   }
 }
 }

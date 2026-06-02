@@ -53,6 +53,20 @@ function checkItems(){
 
   alert("Znaleziono apteczkę! +1 HP");
 }
+
+
+if(currentMap[player.y][player.x] === 6){
+
+  player.hp--;
+
+  updateHeartsUI();
+
+  alert("Wpadłeś w pułapkę! -1 HP");
+
+  currentMap[player.y][player.x] = 0;
+
+  
+}
 }
 
 

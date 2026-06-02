@@ -63,7 +63,12 @@ if(currentMap[player.y][player.x] === 6){
 
   alert("Wpadłeś w pułapkę! -1 HP");
 
-  currentMap[player.y][player.x] = 0;
+   if(player.hp <= 0){
+
+    alert("PRZEGRAŁEŚ");
+
+    location.reload();
+  }
 
   
 }

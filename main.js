@@ -96,12 +96,18 @@ function checkWin(){
     
     document.getElementById("bottomLevelText").innerText =
       "POZIOM: " + level;
+  }
 }
 function checkEnemy(){
 
+if(player.x===enemy.x && player.y===enemy.y){
 
-  
+player.hp--;
+
+
 }
+  
+
 
 }
 

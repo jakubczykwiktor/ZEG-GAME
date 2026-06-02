@@ -104,6 +104,8 @@ if(player.x===enemy.x && player.y===enemy.y){
 
 player.hp--;
 
+updateHeartsUI();
+
 
 }
   

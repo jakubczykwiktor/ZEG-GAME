@@ -164,6 +164,7 @@ function loop(){
 drawPlayer(ctx);
 drawEnemy(ctx);
 drawItems(ctx);
+checkEnemy();
 
   requestAnimationFrame(loop);
 }

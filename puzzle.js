@@ -9,5 +9,6 @@ const puzzles = {
 
 function startPuzzle() {
   
+const p = puzzles[level];
 
 }

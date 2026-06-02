@@ -97,6 +97,12 @@ function checkWin(){
     document.getElementById("bottomLevelText").innerText =
       "POZIOM: " + level;
 }
+function checkEnemy(){
+
+
+  
+}
+
 }
 
 function updateHeartsUI(){

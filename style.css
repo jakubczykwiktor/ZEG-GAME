@@ -97,13 +97,18 @@ body{
 }
 
 .canvas-box{
+ 
   width:100%;
-  height:560px;
+  height:820px;
   border:4px solid #2f5180;
   background:black;
+
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
+
+  overflow:auto;
+
 }
 
 canvas{

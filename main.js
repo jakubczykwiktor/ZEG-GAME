@@ -152,6 +152,7 @@ document.addEventListener("keydown",(e)=>{
 
   
   checkWin();
+  e.preventDefault();
 });
 
 

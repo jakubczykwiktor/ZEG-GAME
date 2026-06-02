@@ -106,6 +106,8 @@ player.hp--;
 
 updateHeartsUI();
 
+player.x=1;
+player.y=1;
 
 }
   
